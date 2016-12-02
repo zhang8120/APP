@@ -1,0 +1,119 @@
+html,body{
+	width: 100%;height: 100%;
+	margin: 0;padding: 0;
+}
+	.swiper-container{
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide:nth-child(1){
+		width: 100%;
+		height: 100%;
+		background: url(../img/bg.png) no-repeat;
+		background-size: contain;
+		position: relative;
+	}
+	.map{
+		width: 2.22rem;
+		height: 1.27rem;
+		margin-left: 2.4rem;
+		margin-top:6.37rem;
+		background: url(../img/map.png)no-repeat;
+		background-size: contain;
+	}
+	.btn{
+		width:2.78rem;
+		height: 0.95rem;
+		border-radius: 0.1rem;
+		background: #fff;
+		font-size: 0.4rem;
+		color: #124f72;
+		text-align: center;
+		line-height: 0.95rem;
+		margin:0 auto;
+		margin-top:0.72rem;
+	}
+	.list{
+		font-size: 0.55rem;
+		box-sizing: border-box;
+		margin-left: 1.86rem;
+		padding-left: 0.77rem;
+		margin-right: 1.86rem;
+		padding-right: 0.77rem;
+		padding-top: 0.61rem;
+		padding-bottom: 0.28rem;
+		border-bottom: 0.02rem solid #fff;
+		color: #fff;	
+	}
+	.con{
+		font-size: 0.32rem;
+		box-sizing: border-box;
+		padding-left: 2.17rem;
+		padding-top: 0.2rem;
+		color: #fff;
+	}
+	.line{
+		width:2.58rem;
+		height: 2.25rem;
+		background: url(img/line.png);
+		position: absolute;
+		margin-top:4.6rem;
+		margin-left:2.28rem;
+	}
+	.per{
+		width: 3.28rem;
+		height: 2.63rem;
+		position: absolute;
+		margin-top: 3.76rem;
+		margin-left: 1.92rem;
+	}
+	.per img{
+		width: 0.74rem;
+		height:0.83rem;
+		position: absolute;
+	}
+	.per img:nth-child(1){
+		top:0.05rem;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.per img:nth-child(2){
+	left:0.1rem;
+	top:0.45rem;	
+	}
+	
+	.per img:nth-child(3){
+	left:0;
+	bottom:0;	
+	}
+	
+	.per img:nth-child(4){
+	left:0.8rem;
+	top:0.75rem;	
+	}
+	
+	.per img:nth-child(5){
+	right:0rem;
+	top:0.26rem;	
+	}
+	
+	.per img:nth-child(6){
+	right:0.05rem;
+	top:1.8rem;	
+	}
+	
+	.per img:nth-child(7){
+	right:0.92rem;
+	top:0.9rem;	
+	}
+	.swiper-slide:nth-child(2){
+				width: 100%;
+		height: 100%;
+		background: yellow;
+	}
+	.swiper-slide:nth-child(3){
+				width: 100%;
+		height: 100%;
+		background: green;
+	}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=1.0,user-scalable=1"/>
+	<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="js/dist/css/swiper.css"/>
+	<link rel="stylesheet" type="text/css" href="js/dist/css/animate.min.css"/>
+	<script src="js/dist/js/zepto.min.js"></script>
+	<script src="js/dist/js/swiper.jquery.js"></script>
+	<script src="js/dist/js/swiper.js"></script>
+	<script src="js/dist/js/swiper.animate1.0.2.min.js"></script>
+<script>
+	function resize(originsize,type){
+		var type=type||"x";
+		if(type=="x"){
+		var widths=document.documentElement.clientWidth;
+		var size=widths/originsize*100;
+		}else if(type=="y"){
+		var heights=document.documentElement.clientHeight;
+		var size=heights/originsize*100;	
+		}
+		document.getElementsByTagName("html")[0].style.fontSize=size+"px";
+	}
+	window.onload=function(){
+		resize(1334,"y")
+		
+	  var mySwiper = new Swiper ('.swiper-container', {
+	  	pagination : '.swiper-pagination',
+  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+    swiperAnimateCache(swiper); //隐藏动画元素 
+    swiperAnimate(swiper); //初始化完成开始动画
+  }, 
+  onSlideChangeEnd: function(swiper){ 
+    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+  } 
+  }) 
+		
+	}
+</script>
+	</head>
+	<body>
+		  <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<div class="per">
+            	<img src="img/per1.png" alt="" class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"/>
+            	<img src="img/per2.png" alt="" class="ani"  swiper-animate-effect="slideInLeft" swiper-animate-duration="1" swiper-animate-delay="0.6s"/>
+            	<img src="img/per3.png" alt="" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s"/>
+            	<img src="img/per4.png" alt="" class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.9s"/>
+            	<img src="img/per5.png" alt="" class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s"/>
+            	<img src="img/per6.png" alt="" class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="0.6s"/>
+            	<img src="img/per7.png" alt=""class="ani"  swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s" />
+            	</div>
+            	<div class="line ani"swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="1s"></div>
+            	<div class="map  ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"></div>
+            	<div class="list ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="0.3s">消息列表</div>
+            	<div class="con ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">您身边的电网移动秘书</div>
+            	<div class="btn ani" swiper-animate-effect="bounceIn infinite" swiper-animate-duration="2s" swiper-animate-delay="0.5s">点击体验</div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+	</body>
+</html>
