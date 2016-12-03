@@ -55,7 +55,7 @@ html,body{
 	.line{
 		width:2.58rem;
 		height: 2.25rem;
-		background: url(img/line.png);
+		background: url(../img/line.png);
 		position: absolute;
 		margin-top:4.6rem;
 		margin-left:2.28rem;
